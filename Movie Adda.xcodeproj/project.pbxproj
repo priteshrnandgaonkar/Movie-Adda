@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAB562EE1CD4971A003A2ECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB562ED1CD4971A003A2ECA /* AppDelegate.swift */; };
+		CAB562F01CD4971A003A2ECA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB562EF1CD4971A003A2ECA /* ViewController.swift */; };
+		CAB562F31CD4971A003A2ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB562F11CD4971A003A2ECA /* Main.storyboard */; };
+		CAB562F51CD4971A003A2ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB562F41CD4971A003A2ECA /* Assets.xcassets */; };
+		CAB562F81CD4971A003A2ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB562F61CD4971A003A2ECA /* LaunchScreen.storyboard */; };
+		CAB563031CD4971A003A2ECA /* Movie_AddaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB563021CD4971A003A2ECA /* Movie_AddaTests.swift */; };
+		CAB5630E1CD4971A003A2ECA /* Movie_AddaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5630D1CD4971A003A2ECA /* Movie_AddaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAB562FF1CD4971A003A2ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAB562E21CD4971A003A2ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAB562E91CD4971A003A2ECA;
+			remoteInfo = "Movie Adda";
+		};
+		CAB5630A1CD4971A003A2ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAB562E21CD4971A003A2ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAB562E91CD4971A003A2ECA;
+			remoteInfo = "Movie Adda";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CAB562EA1CD4971A003A2ECA /* Movie Adda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Adda.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB562ED1CD4971A003A2ECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAB562EF1CD4971A003A2ECA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAB562F21CD4971A003A2ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAB562F41CD4971A003A2ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAB562F71CD4971A003A2ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CAB562F91CD4971A003A2ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB562FE1CD4971A003A2ECA /* Movie AddaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movie AddaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB563021CD4971A003A2ECA /* Movie_AddaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_AddaTests.swift; sourceTree = "<group>"; };
+		CAB563041CD4971A003A2ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB563091CD4971A003A2ECA /* Movie AddaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movie AddaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB5630D1CD4971A003A2ECA /* Movie_AddaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_AddaUITests.swift; sourceTree = "<group>"; };
+		CAB5630F1CD4971A003A2ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAB562E71CD4971A003A2ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB562FB1CD4971A003A2ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB563061CD4971A003A2ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAB562E11CD4971A003A2ECA = {
+			isa = PBXGroup;
+			children = (
+				CAB562EC1CD4971A003A2ECA /* Movie Adda */,
+				CAB563011CD4971A003A2ECA /* Movie AddaTests */,
+				CAB5630C1CD4971A003A2ECA /* Movie AddaUITests */,
+				CAB562EB1CD4971A003A2ECA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAB562EB1CD4971A003A2ECA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAB562EA1CD4971A003A2ECA /* Movie Adda.app */,
+				CAB562FE1CD4971A003A2ECA /* Movie AddaTests.xctest */,
+				CAB563091CD4971A003A2ECA /* Movie AddaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAB562EC1CD4971A003A2ECA /* Movie Adda */ = {
+			isa = PBXGroup;
+			children = (
+				CAB562ED1CD4971A003A2ECA /* AppDelegate.swift */,
+				CAB562EF1CD4971A003A2ECA /* ViewController.swift */,
+				CAB562F11CD4971A003A2ECA /* Main.storyboard */,
+				CAB562F41CD4971A003A2ECA /* Assets.xcassets */,
+				CAB562F61CD4971A003A2ECA /* LaunchScreen.storyboard */,
+				CAB562F91CD4971A003A2ECA /* Info.plist */,
+			);
+			path = "Movie Adda";
+			sourceTree = "<group>";
+		};
+		CAB563011CD4971A003A2ECA /* Movie AddaTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAB563021CD4971A003A2ECA /* Movie_AddaTests.swift */,
+				CAB563041CD4971A003A2ECA /* Info.plist */,
+			);
+			path = "Movie AddaTests";
+			sourceTree = "<group>";
+		};
+		CAB5630C1CD4971A003A2ECA /* Movie AddaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5630D1CD4971A003A2ECA /* Movie_AddaUITests.swift */,
+				CAB5630F1CD4971A003A2ECA /* Info.plist */,
+			);
+			path = "Movie AddaUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAB562E91CD4971A003A2ECA /* Movie Adda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAB563121CD4971A003A2ECA /* Build configuration list for PBXNativeTarget "Movie Adda" */;
+			buildPhases = (
+				CAB562E61CD4971A003A2ECA /* Sources */,
+				CAB562E71CD4971A003A2ECA /* Frameworks */,
+				CAB562E81CD4971A003A2ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Movie Adda";
+			productName = "Movie Adda";
+			productReference = CAB562EA1CD4971A003A2ECA /* Movie Adda.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAB562FD1CD4971A003A2ECA /* Movie AddaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAB563151CD4971A003A2ECA /* Build configuration list for PBXNativeTarget "Movie AddaTests" */;
+			buildPhases = (
+				CAB562FA1CD4971A003A2ECA /* Sources */,
+				CAB562FB1CD4971A003A2ECA /* Frameworks */,
+				CAB562FC1CD4971A003A2ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAB563001CD4971A003A2ECA /* PBXTargetDependency */,
+			);
+			name = "Movie AddaTests";
+			productName = "Movie AddaTests";
+			productReference = CAB562FE1CD4971A003A2ECA /* Movie AddaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CAB563081CD4971A003A2ECA /* Movie AddaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAB563181CD4971A003A2ECA /* Build configuration list for PBXNativeTarget "Movie AddaUITests" */;
+			buildPhases = (
+				CAB563051CD4971A003A2ECA /* Sources */,
+				CAB563061CD4971A003A2ECA /* Frameworks */,
+				CAB563071CD4971A003A2ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAB5630B1CD4971A003A2ECA /* PBXTargetDependency */,
+			);
+			name = "Movie AddaUITests";
+			productName = "Movie AddaUITests";
+			productReference = CAB563091CD4971A003A2ECA /* Movie AddaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAB562E21CD4971A003A2ECA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Pritesh Nandgaonkar";
+				TargetAttributes = {
+					CAB562E91CD4971A003A2ECA = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					CAB562FD1CD4971A003A2ECA = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = CAB562E91CD4971A003A2ECA;
+					};
+					CAB563081CD4971A003A2ECA = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = CAB562E91CD4971A003A2ECA;
+					};
+				};
+			};
+			buildConfigurationList = CAB562E51CD4971A003A2ECA /* Build configuration list for PBXProject "Movie Adda" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAB562E11CD4971A003A2ECA;
+			productRefGroup = CAB562EB1CD4971A003A2ECA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAB562E91CD4971A003A2ECA /* Movie Adda */,
+				CAB562FD1CD4971A003A2ECA /* Movie AddaTests */,
+				CAB563081CD4971A003A2ECA /* Movie AddaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAB562E81CD4971A003A2ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB562F81CD4971A003A2ECA /* LaunchScreen.storyboard in Resources */,
+				CAB562F51CD4971A003A2ECA /* Assets.xcassets in Resources */,
+				CAB562F31CD4971A003A2ECA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB562FC1CD4971A003A2ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB563071CD4971A003A2ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAB562E61CD4971A003A2ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB562F01CD4971A003A2ECA /* ViewController.swift in Sources */,
+				CAB562EE1CD4971A003A2ECA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB562FA1CD4971A003A2ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB563031CD4971A003A2ECA /* Movie_AddaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB563051CD4971A003A2ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAB5630E1CD4971A003A2ECA /* Movie_AddaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAB563001CD4971A003A2ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAB562E91CD4971A003A2ECA /* Movie Adda */;
+			targetProxy = CAB562FF1CD4971A003A2ECA /* PBXContainerItemProxy */;
+		};
+		CAB5630B1CD4971A003A2ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAB562E91CD4971A003A2ECA /* Movie Adda */;
+			targetProxy = CAB5630A1CD4971A003A2ECA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAB562F11CD4971A003A2ECA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAB562F21CD4971A003A2ECA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAB562F61CD4971A003A2ECA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAB562F71CD4971A003A2ECA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAB563101CD4971A003A2ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CAB563111CD4971A003A2ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAB563131CD4971A003A2ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Movie Adda/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PN.Movie-Adda";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CAB563141CD4971A003A2ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Movie Adda/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PN.Movie-Adda";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CAB563161CD4971A003A2ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Movie AddaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PN.Movie-AddaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movie Adda.app/Movie Adda";
+			};
+			name = Debug;
+		};
+		CAB563171CD4971A003A2ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Movie AddaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PN.Movie-AddaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movie Adda.app/Movie Adda";
+			};
+			name = Release;
+		};
+		CAB563191CD4971A003A2ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Movie AddaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PN.Movie-AddaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Movie Adda";
+			};
+			name = Debug;
+		};
+		CAB5631A1CD4971A003A2ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Movie AddaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "PN.Movie-AddaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Movie Adda";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAB562E51CD4971A003A2ECA /* Build configuration list for PBXProject "Movie Adda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB563101CD4971A003A2ECA /* Debug */,
+				CAB563111CD4971A003A2ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAB563121CD4971A003A2ECA /* Build configuration list for PBXNativeTarget "Movie Adda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB563131CD4971A003A2ECA /* Debug */,
+				CAB563141CD4971A003A2ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CAB563151CD4971A003A2ECA /* Build configuration list for PBXNativeTarget "Movie AddaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB563161CD4971A003A2ECA /* Debug */,
+				CAB563171CD4971A003A2ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CAB563181CD4971A003A2ECA /* Build configuration list for PBXNativeTarget "Movie AddaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAB563191CD4971A003A2ECA /* Debug */,
+				CAB5631A1CD4971A003A2ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAB562E21CD4971A003A2ECA /* Project object */;
+}
