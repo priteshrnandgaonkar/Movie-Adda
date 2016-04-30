@@ -76,19 +76,37 @@ class ViewController: UIViewController {
         movieTextField.endEditing(true)
         activityIndicator.hidden = false
         activityIndicator.startAnimating()
+        UIApplication.sharedApplication().beginIgnoringInteractionEvents()
         movieQueried = movieTextField.text!
+        
         Movie.fetchMovieListForQuery(movieQueried) { (movieArray) in
-            self.activityIndicator.stopAnimating()
-            if let arr = movieArray {
-                if(movieArray?.count > 0){
-                    self.movieList = arr
-                    dispatch_async(dispatch_get_main_queue()) { [unowned self] in
+            dispatch_async(dispatch_get_main_queue()) { [unowned self] in
+
+                self.activityIndicator.stopAnimating()
+                UIApplication.sharedApplication().endIgnoringInteractionEvents()
+              
+                if let arr = movieArray {
+                    if(movieArray?.count > 0){
+                        self.movieList = arr
                         self.performSegueWithIdentifier("MovieList", sender: self)
                     }
+                    else {
+                        self.showAlert()
+                    }
+                }
+                else {
+                    self.showAlert()
                 }
             }
         }
+    }
+
+    
+    func showAlert() {
+        let alert=UIAlertController(title: "Error", message: "No Data found, Try Something else", preferredStyle: UIAlertControllerStyle.Alert);
         
+        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.Cancel, handler: nil));
+        self.presentViewController(alert, animated: true, completion: nil);
     }
 }
 

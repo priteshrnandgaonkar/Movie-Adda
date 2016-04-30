@@ -21,6 +21,15 @@ class Movie {
     var imdbID: String
     var type: MovieType
     var posterImgURL: NSURL
+    var rating: String?
+    var plot: String?
+    var genres: [String]?
+    var releaseDate: String?
+    var duration: String?
+    
+    convenience init(){
+        self.init(title: "", year: "", imdbID: "", type:"", poster:NSURL())
+    }
     
     init(title: String, year: String, imdbID: String, type typeString:String, poster:NSURL) {
         self.title = title
@@ -81,6 +90,42 @@ class Movie {
                 }
             }
             completion(movieArray: moviesArray)
+        }
+        dataTask.resume()
+    }
+    
+    func updateWithMoreDetils(completion:(updated: Bool) -> ()){
+        
+        let str = Constants.OMDBBaseURL+"i=\(imdbID)"
+        let url = NSURL.init(string: str)!
+        
+        let request = NSURLRequest(URL: url, cachePolicy: .UseProtocolCachePolicy, timeoutInterval: 30)
+        
+        let dataTask = NSURLSession.sharedSession().dataTaskWithRequest(request){ (data, response, error) -> Void in
+            
+            if let error = error {
+                print("\(error.description)")
+                //error
+                completion(updated: false)
+                return
+            }
+            
+            guard let data = data,
+                let jsonDict = try? NSJSONSerialization.JSONObjectWithData(data, options: [.MutableLeaves, .AllowFragments])  else {
+                    //no data
+                    completion(updated: false)
+                    return
+            }
+            self.rating = jsonDict["Rated"] as? String
+            self.plot = jsonDict["Plot"] as? String
+            self.duration = jsonDict["Runtime"] as? String
+            self.releaseDate = jsonDict["Released"] as? String
+            if let str = jsonDict["Genre"] {
+                let geneString = str as! String
+                let arr = geneString.componentsSeparatedByString(", ")
+                self.genres = arr
+            }
+            completion(updated: true)
         }
         dataTask.resume()
     }
