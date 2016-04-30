@@ -14,6 +14,11 @@
 		CAB562F81CD4971A003A2ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB562F61CD4971A003A2ECA /* LaunchScreen.storyboard */; };
 		CAB563031CD4971A003A2ECA /* Movie_AddaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB563021CD4971A003A2ECA /* Movie_AddaTests.swift */; };
 		CAB5630E1CD4971A003A2ECA /* Movie_AddaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5630D1CD4971A003A2ECA /* Movie_AddaUITests.swift */; };
+		CAB5631E1CD4B86E003A2ECA /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5631D1CD4B86E003A2ECA /* Movie.swift */; };
+		CAB563201CD4BCDE003A2ECA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB5631F1CD4BCDE003A2ECA /* Constants.swift */; };
+		CAB563361CD4E104003A2ECA /* icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB563351CD4E104003A2ECA /* icons.xcassets */; };
+		CAB563381CD4E506003A2ECA /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB563371CD4E506003A2ECA /* MovieTableViewCell.swift */; };
+		CAB5633A1CD4E843003A2ECA /* MovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB563391CD4E843003A2ECA /* MovieListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		CAB563091CD4971A003A2ECA /* Movie AddaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Movie AddaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB5630D1CD4971A003A2ECA /* Movie_AddaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_AddaUITests.swift; sourceTree = "<group>"; };
 		CAB5630F1CD4971A003A2ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAB5631D1CD4B86E003A2ECA /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		CAB5631F1CD4BCDE003A2ECA /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		CAB563351CD4E104003A2ECA /* icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = icons.xcassets; sourceTree = "<group>"; };
+		CAB563371CD4E506003A2ECA /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		CAB563391CD4E843003A2ECA /* MovieListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +107,16 @@
 		CAB562EC1CD4971A003A2ECA /* Movie Adda */ = {
 			isa = PBXGroup;
 			children = (
+				CAB563341CD4E0F0003A2ECA /* Resources */,
+				CAB563211CD4C268003A2ECA /* Frameworks */,
+				CAB5631C1CD4B770003A2ECA /* Models */,
+				CAB5631B1CD499CC003A2ECA /* Controllers */,
 				CAB562ED1CD4971A003A2ECA /* AppDelegate.swift */,
-				CAB562EF1CD4971A003A2ECA /* ViewController.swift */,
 				CAB562F11CD4971A003A2ECA /* Main.storyboard */,
 				CAB562F41CD4971A003A2ECA /* Assets.xcassets */,
 				CAB562F61CD4971A003A2ECA /* LaunchScreen.storyboard */,
 				CAB562F91CD4971A003A2ECA /* Info.plist */,
+				CAB5631F1CD4BCDE003A2ECA /* Constants.swift */,
 			);
 			path = "Movie Adda";
 			sourceTree = "<group>";
@@ -123,6 +137,39 @@
 				CAB5630F1CD4971A003A2ECA /* Info.plist */,
 			);
 			path = "Movie AddaUITests";
+			sourceTree = "<group>";
+		};
+		CAB5631B1CD499CC003A2ECA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAB562EF1CD4971A003A2ECA /* ViewController.swift */,
+				CAB563391CD4E843003A2ECA /* MovieListViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		CAB5631C1CD4B770003A2ECA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAB5631D1CD4B86E003A2ECA /* Movie.swift */,
+				CAB563371CD4E506003A2ECA /* MovieTableViewCell.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CAB563211CD4C268003A2ECA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CAB563341CD4E0F0003A2ECA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CAB563351CD4E104003A2ECA /* icons.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +240,7 @@
 				TargetAttributes = {
 					CAB562E91CD4971A003A2ECA = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = TB2282VDLT;
 					};
 					CAB562FD1CD4971A003A2ECA = {
 						CreatedOnToolsVersion = 7.3;
@@ -231,6 +279,7 @@
 			files = (
 				CAB562F81CD4971A003A2ECA /* LaunchScreen.storyboard in Resources */,
 				CAB562F51CD4971A003A2ECA /* Assets.xcassets in Resources */,
+				CAB563361CD4E104003A2ECA /* icons.xcassets in Resources */,
 				CAB562F31CD4971A003A2ECA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +305,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAB563381CD4E506003A2ECA /* MovieTableViewCell.swift in Sources */,
 				CAB562F01CD4971A003A2ECA /* ViewController.swift in Sources */,
+				CAB5631E1CD4B86E003A2ECA /* Movie.swift in Sources */,
+				CAB5633A1CD4E843003A2ECA /* MovieListViewController.swift in Sources */,
 				CAB562EE1CD4971A003A2ECA /* AppDelegate.swift in Sources */,
+				CAB563201CD4BCDE003A2ECA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,10 +452,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Movie",
+					Adda,
+				);
 				INFOPLIST_FILE = "Movie Adda/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PN.Movie-Adda";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -410,10 +472,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Movie",
+					Adda,
+				);
 				INFOPLIST_FILE = "Movie Adda/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "PN.Movie-Adda";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +553,7 @@
 				CAB563141CD4971A003A2ECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CAB563151CD4971A003A2ECA /* Build configuration list for PBXNativeTarget "Movie AddaTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +562,7 @@
 				CAB563171CD4971A003A2ECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CAB563181CD4971A003A2ECA /* Build configuration list for PBXNativeTarget "Movie AddaUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +571,7 @@
 				CAB5631A1CD4971A003A2ECA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
