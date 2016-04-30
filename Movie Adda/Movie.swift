@@ -99,7 +99,7 @@ class Movie {
         let str = Constants.OMDBBaseURL+"i=\(imdbID)"
         let url = NSURL.init(string: str)!
         
-        let request = NSURLRequest(URL: url, cachePolicy: .UseProtocolCachePolicy, timeoutInterval: 30)
+        let request = NSURLRequest(URL: url, cachePolicy: .UseProtocolCachePolicy, timeoutInterval: 45)
         
         let dataTask = NSURLSession.sharedSession().dataTaskWithRequest(request){ (data, response, error) -> Void in
             
