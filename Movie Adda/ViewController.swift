@@ -80,28 +80,30 @@ class ViewController: UIViewController {
         movieQueried = movieTextField.text!
         
         Movie.fetchMovieListForQuery(movieQueried) { (movieArray) in
-            dispatch_async(dispatch_get_main_queue()) { [unowned self] in
+            dispatch_async(dispatch_get_main_queue()) { [weak self] in
 
-                self.activityIndicator.stopAnimating()
+                guard let strongSelf = self else{
+                    return;
+                }
+                strongSelf.activityIndicator.stopAnimating()
                 UIApplication.sharedApplication().endIgnoringInteractionEvents()
               
                 if let arr = movieArray {
                     if(movieArray?.count > 0){
-                        self.movieList = arr
-                        self.performSegueWithIdentifier("MovieList", sender: self)
+                        strongSelf.movieList = arr
+                        strongSelf.performSegueWithIdentifier("MovieList", sender: self)
                     }
                     else {
-                        self.showAlert()
+                        strongSelf.showAlert()
                     }
                 }
                 else {
-                    self.showAlert()
+                    strongSelf.showAlert()
                 }
             }
         }
     }
 
-    
     func showAlert() {
         let alert=UIAlertController(title: "Error", message: "No Data found, Try Something else", preferredStyle: UIAlertControllerStyle.Alert);
         

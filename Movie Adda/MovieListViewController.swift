@@ -41,17 +41,21 @@ class MovieListViewController: UIViewController {
         activityIndicator.startAnimating()
         UIApplication.sharedApplication().beginIgnoringInteractionEvents()
         movie.updateWithMoreDetils { (updated) in
-            dispatch_async(dispatch_get_main_queue()) { [unowned self] in
+            dispatch_async(dispatch_get_main_queue()) { [weak self] in
                 
-                self.activityIndicator.stopAnimating()
+                guard let strongSelf = self else {
+                    return;
+                }
+                
+                strongSelf.activityIndicator.stopAnimating()
                 UIApplication.sharedApplication().endIgnoringInteractionEvents()
 
                 if(updated){
-                    self.movieToShow = movie
-                    self.performSegueWithIdentifier("MovieDetail", sender: self)
+                    strongSelf.movieToShow = movie
+                    strongSelf.performSegueWithIdentifier("MovieDetail", sender: self)
                 }
                 else{
-                    self.showAlert(movie.title)
+                    strongSelf.showAlert(movie.title)
                     }
             }
         }
