@@ -83,7 +83,7 @@ class ViewController: UIViewController {
             dispatch_async(dispatch_get_main_queue()) { [weak self] in
 
                 guard let strongSelf = self else{
-                    return;
+                    return
                 }
                 strongSelf.activityIndicator.stopAnimating()
                 UIApplication.sharedApplication().endIgnoringInteractionEvents()
